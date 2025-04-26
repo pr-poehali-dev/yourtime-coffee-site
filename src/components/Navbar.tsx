@@ -11,6 +11,7 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import { cn } from "@/lib/utils";
+import { Button } from "./ui/button";
 
 const Navbar = () => {
   return (
@@ -25,35 +26,27 @@ const Navbar = () => {
         <NavigationMenu>
           <NavigationMenuList>
             <NavigationMenuItem>
-              <Link to="/">
-                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  <Home className="mr-2 h-4 w-4" />
-                  Главная
-                </NavigationMenuLink>
+              <Link to="/" className={cn(navigationMenuTriggerStyle(), "flex items-center")}>
+                <Home className="mr-2 h-4 w-4" />
+                Главная
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Link to="/menu">
-                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  <Utensils className="mr-2 h-4 w-4" />
-                  Меню
-                </NavigationMenuLink>
+              <Link to="/menu" className={cn(navigationMenuTriggerStyle(), "flex items-center")}>
+                <Utensils className="mr-2 h-4 w-4" />
+                Меню
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Link to="/coffee-guide">
-                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  <Video className="mr-2 h-4 w-4" />
-                  Как готовить кофе
-                </NavigationMenuLink>
+              <Link to="/coffee-guide" className={cn(navigationMenuTriggerStyle(), "flex items-center")}>
+                <Video className="mr-2 h-4 w-4" />
+                Как готовить кофе
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Link to="/coffee-articles">
-                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  <BookOpen className="mr-2 h-4 w-4" />
-                  Статьи о кофе
-                </NavigationMenuLink>
+              <Link to="/coffee-articles" className={cn(navigationMenuTriggerStyle(), "flex items-center")}>
+                <BookOpen className="mr-2 h-4 w-4" />
+                Статьи о кофе
               </Link>
             </NavigationMenuItem>
           </NavigationMenuList>
