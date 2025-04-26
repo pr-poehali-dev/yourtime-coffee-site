@@ -3,6 +3,7 @@ import { Coffee, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import BaristaGallery from "@/components/BaristaGallery";
 
 const Index = () => {
   return (
@@ -146,6 +147,13 @@ const Index = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </section>
+
+        {/* Barista Gallery */}
+        <section className="py-16 bg-muted">
+          <div className="container">
+            <BaristaGallery />
           </div>
         </section>
       </main>

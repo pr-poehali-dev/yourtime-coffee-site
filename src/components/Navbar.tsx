@@ -1,5 +1,6 @@
+
 import { Link } from "react-router-dom";
-import { Coffee, Home, Utensils, Video } from "lucide-react";
+import { Coffee, Home, Utensils, Video, BookOpen } from "lucide-react";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -44,6 +45,14 @@ const Navbar = () => {
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                   <Video className="mr-2 h-4 w-4" />
                   Как готовить кофе
+                </NavigationMenuLink>
+              </Link>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+              <Link to="/coffee-articles">
+                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                  <BookOpen className="mr-2 h-4 w-4" />
+                  Статьи о кофе
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
